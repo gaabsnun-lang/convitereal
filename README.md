@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iPhone X, XS, 11 Pro – 2</title>
+<title>iPhone X, XS, 11 Pro – 1</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: iPhone X, XS, 11 Pro – 2;
-		--web-view-id: iPhone_X_XS_11_Pro__2;
+		--web-view-name: iPhone X, XS, 11 Pro – 1;
+		--web-view-id: iPhone_X_XS_11_Pro__1;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: iPhone_X_XS_11_Pro__2;
+		--web-view-ids: iPhone_X_XS_11_Pro__1;
 	}
 	* {
 		margin: 0;
@@ -21,22 +21,28 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#iPhone_X_XS_11_Pro__2 {
+	#iPhone_X_XS_11_Pro__1 {
 		position: absolute;
 		width: 375px;
 		height: 812px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: iPhone X, XS, 11 Pro – 2;
-		--web-view-id: iPhone_X_XS_11_Pro__2;
+		--web-view-name: iPhone X, XS, 11 Pro – 1;
+		--web-view-id: iPhone_X_XS_11_Pro__1;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	@keyframes  {
+	@keyframes fadein {
 	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	
 	}
-	#aaa {
+	#aac {
 		position: absolute;
 		width: 375px;
 		height: 812px;
@@ -44,43 +50,52 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#aab {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		width: 668px;
-		height: 668px;
-		left: -146px;
-		top: 72px;
-		overflow: visible;
-	}
-	#aac {
-		position: absolute;
-		width: 250px;
-		height: 498px;
-		left: 63px;
-		top: 167px;
-		overflow: visible;
-	}
 	#aad {
 		position: absolute;
-		width: 81px;
-		height: 114px;
-		left: 147px;
-		top: 608px;
+		width: 330px;
+		height: 156px;
+		left: 23px;
+		top: 120px;
 		overflow: visible;
 	}
 	#aae {
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
 		position: absolute;
-		width: 81px;
-		height: 114px;
+		width: 252px;
+		height: 224px;
+		left: 62px;
+		top: 449px;
+		overflow: visible;
+	}
+	#aaf {
+		position: absolute;
+		width: 46px;
+		height: 64px;
+		left: 176px;
+		top: 540px;
+		overflow: visible;
+		transition: all 0.30000001192092896s ease-in;
+		--web-animation: fadein 0.30000001192092896s ease-in;
+		--web-action-type: page;
+		--web-action-target: iPhone_X_XS_11_Pro__2.html;
+		cursor: pointer;
+	}
+	#aag {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 46px;
+		height: 64px;
 		left: 0px;
 		top: 0px;
 		overflow: visible;
-		--web-animation: fadein undefineds undefined;
-		--web-action-type: page;
-		--web-action-target: iPhone_X_XS_11_Pro__1.html;
-		cursor: pointer;
+	}
+	#aah {
+		position: absolute;
+		width: 252px;
+		height: 77px;
+		left: 73px;
+		top: 329px;
+		overflow: visible;
 	}
 </style>
 <script id="applicationScript">
@@ -2990,17 +3005,19 @@ window.application = new Application();
 </script>
 </head>
 <body>
-	<div id="iPhone_X_XS_11_Pro__2">
-	<img id="aaa" src="aaa.png" srcset="aaa.png 1x, aaa@2x.png 2x">
-		
-	<img id="aab" src="aab.png" srcset="aab.png 1x, aab@2x.png 2x">
-		
+	<div id="iPhone_X_XS_11_Pro__1">
 	<img id="aac" src="aac.png" srcset="aac.png 1x, aac@2x.png 2x">
 		
-	<div id="aad" class="selo___fechar">
-		<img onclick="application.goToTargetView(event)" id="aae" src="aae.png" srcset="aae.png 1x, aae@2x.png 2x">
+	<img id="aad" src="aad.png" srcset="aad.png 1x, aad@2x.png 2x">
+		
+	<img id="aae" src="aae.png" srcset="aae.png 1x, aae@2x.png 2x">
+		
+	<div onclick="application.goToTargetView(event)" id="aaf" class="selo___abrir">
+		<img id="aag" src="aag.png" srcset="aag.png 1x, aag@2x.png 2x">
 			
 	</div>
+	<img id="aah" src="aah.png" srcset="aah.png 1x, aah@2x.png 2x">
+		
 </div>
 </body>
 </html>
